@@ -29,4 +29,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 #### 二、实现图片懒加载
 	1、首先修改了下左侧价格筛选和手机端适配问题
 	2、使用vue-lazyload实现懒加载,具体如何引用可参考npm官网并搜索vue-lazyload查询使用
-#### 三、<font color="red">Linux下安装node环境</font>
+#### 三、[Linux下安装node环境(划重点)]()
