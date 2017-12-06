@@ -21,7 +21,7 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-## 此处记录每天更新日子
+## 此处记录每天更新细节
 ### 2017-12-06
 #### 一、增加商品列表数据渲染实现
 1、在项目更根目录新建mock文件夹，文件夹下面新建goods.json文件
