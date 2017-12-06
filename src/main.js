@@ -4,7 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import {sum,minus} from './util'
+import axios from 'axios'
+import VueLazyload from 'vue-lazyload'
 
+Vue.use( VueLazyload , {
+	loading: './../static/loading/loading-bars.svg'
+})
 Vue.config.productionTip = false
 
 console.log(`sum:${sum(1,2)}`);
@@ -13,6 +18,6 @@ console.log(`sum:${sum(1,2)}`);
 new Vue({
   el: '#app',
   router,
-  template: '<App/>',
+  template: '<App/>',   
   components: { App }
 })

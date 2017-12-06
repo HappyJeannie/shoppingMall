@@ -8,6 +8,19 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
+// 以下为新增数据路由，用于访问本地数据
+const express = require('express');
+var router = express.Router();
+const app = express();
+var goodsData = require('../mock/goods.json');
+router.get("/goods",function(req,res,next){
+  //next为向后流转
+  //json()直接json格式输出
+  res.json(goodsData);
+})
+app.use(router);
+// 以上为新增数据路由，用于访问本地数据
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })

@@ -29,24 +29,11 @@ export default new Router({
     //   	}
     //   ]
     // },
+    // 
     {
-    	path:'/',
-    	name:'GoodsList',
-    	components : {
-    		default : GoodsList,
-    		title : Title,
-    		image : Image
-    	}
-    },
-    {
-    	path:"/cart",
-    	name:"cart",
-    	component:Cart
-    },
-    {
-    	path:"/count",
-    	name:"count",
-    	component:Count
+        path:'/',
+        name:"GoodsList",
+        component:GoodsList
     }
   ]
 })
