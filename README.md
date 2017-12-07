@@ -42,6 +42,19 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 	3、创建一个Web容器，可以访问到Html内容
 	4、Http模块客户端演示
 
+### 2017-12-07
+#### 一、搭建基于Express框架运行环境
+	1、安装express generator生成器:
+	    ``
+	    cnpm install -g express express-generator
+	    express server
+	    cd server
+	    cnpm install
+	    node bin/wwww
+	    打开localhost:3000即能访问express搭建的服务器
+	2、通过生成器自动创建项目
+	3、配置分析
+#### 二、MongoDB介绍
 
 
 
